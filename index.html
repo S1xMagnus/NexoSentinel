@@ -83,38 +83,39 @@
         </p>
     </div>
 
-    <nav class="fixed top-10 w-full z-50 glass py-4 md:py-5 px-6 md:px-10 flex justify-between items-center border-b border-white/5">
-        <div class="flex items-center gap-4">
-            <img alt="Logo Nexo Sentinel" class="w-8 h-8 md:w-10 md:h-10 object-contain" src="./img/logo.png"/>
-            <div class="text-base md:text-xl tracking-widest text-white flex flex-col items-start leading-none nav-link font-title">
-                <span>NEXO</span>
-                <span class="text-nexoGreen text-[8px] md:text-xs tracking-[0.4em]">SENTINEL</span>
-            </div>
-        </div>
-        <div class="hidden lg:flex items-center gap-10 text-[10px] uppercase tracking-widest font-bold text-gray-400 font-title">
+    <nav class="fixed top-10 w-full z-50 glass py-6 px-6 md:px-10 flex justify-center items-center border-b border-white/5">
+        <div class="hidden lg:flex items-center gap-16 text-[11px] uppercase tracking-[0.3em] font-bold text-gray-400 font-title">
             <a class="hover:text-white transition-colors" href="#modelos">Models</a>
             <a class="hover:text-white transition-colors" href="#preus">Preus</a>
             <a class="hover:text-white transition-colors" href="#essencia">Essència</a>
             <a class="hover:text-white transition-colors" href="#seguretat">Seguretat</a>
             <a class="hover:text-white transition-colors" href="#ods">Agenda 2030</a>
         </div>
-        <button onclick="showModal('Nexo Sentinel')" class="hidden lg:block bg-nexoBlue hover:bg-blue-800 text-white px-8 py-3 rounded-md font-bold uppercase text-[10px] tracking-widest font-title">Reserva Ara</button>
+        
         <button id="mobile-menu-btn" class="lg:hidden text-white p-2">
             <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
         </button>
     </nav>
+
+    <div id="mobile-menu" class="fixed inset-0 bg-nexoDark/98 backdrop-blur-xl z-[70] hidden flex-col items-center justify-center gap-10 opacity-0 transition-opacity duration-300">
+        <button id="close-menu-btn" class="absolute top-12 right-8 text-white p-2 focus:outline-none"><svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg></button>
+        <a class="mobile-link text-xl text-white uppercase tracking-widest font-title" href="#modelos">Models</a>
+        <a class="mobile-link text-xl text-white uppercase tracking-widest font-title" href="#preus">Preus</a>
+        <a class="mobile-link text-xl text-white uppercase tracking-widest font-title" href="#essencia">Essència</a>
+        <a class="mobile-link text-xl text-white uppercase tracking-widest font-title" href="#seguretat">Seguretat</a>
+        <a class="mobile-link text-xl text-white uppercase tracking-widest font-title" href="#ods">Agenda 2030</a>
+    </div>
 
     <section class="min-h-screen flex items-center px-6 md:px-10 lg:px-24 pt-32 lg:pt-20 overflow-hidden relative border-b border-white/5">
         <div class="grid lg:grid-cols-2 gap-10 items-center w-full z-10">
             <div class="flex flex-col items-start text-left">
                 <p class="text-nexoGold text-xs md:text-sm tracking-[0.3em] mb-4 uppercase font-bold italic font-title">El futur està aquí.</p>
                 <h1 class="text-4xl md:text-6xl lg:text-7xl font-black leading-tight mb-6 text-white uppercase font-title">EL TEU DESTÍ<br><span class="text-nexoBlue">SENSE BARRERES.</span></h1>
-                <p class="text-base md:text-xl font-light mb-8 max-w-lg leading-relaxed text-slate-400">Recupera la teva llibertat. El vehicle autònom de Nivell 4 que transforma la mobilitat assistida eliminant la dependència de tercers.</p>
-                <button onclick="showModal('Nexo Sentinel')" class="bg-nexoBlue text-white px-8 py-4 rounded font-bold uppercase text-[10px] tracking-widest font-title shadow-lg">Reserva la teva llibertat</button>
+                <p class="text-base md:text-xl font-light mb-8 max-w-lg leading-relaxed text-slate-400">Recupera la teva llibertat. El vehicle autònom de Nivell 4 que transforma la mobilitat assistida.</p>
             </div>
             <div class="flex justify-center relative h-[300px] md:h-[500px] w-full mt-10 lg:mt-0">
-                <div class="dashed-circle w-[280px] h-[280px] md:w-[450px] md:h-[450px] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex items-center justify-center">
-                    <div class="text-center opacity-70">
+                <div class="dashed-circle w-[280px] h-[280px] md:w-[450px] md:h-[450px] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex items-center justify-center opacity-70">
+                    <div class="text-center">
                         <div class="w-10 h-10 md:w-12 md:h-12 bg-nexoBlue rounded-md flex items-center justify-center mx-auto mb-4 shadow-xl"><span class="text-white text-xl">♿</span></div>
                         <p class="text-nexoGold tracking-widest uppercase text-[10px] font-title">Nexo Sentinel</p>
                     </div>
@@ -129,7 +130,7 @@
 
     <section id="preus" class="py-20 md:py-32 px-6 md:px-10 lg:px-24 bg-[#08090b]">
         <div class="max-w-6xl mx-auto">
-            <h2 class="text-2xl md:text-4xl text-white mb-16 uppercase tracking-widest text-center font-title">ELS NOSTRES <span class="text-nexoBlue">PREUS</span></h2>
+            <h2 class="text-2xl md:text-4xl text-white mb-16 uppercase tracking-widest text-center font-title font-bold">ELS NOSTRES <span class="text-nexoBlue">PREUS</span></h2>
             <div class="grid lg:grid-cols-2 gap-10 md:gap-12 items-start">
                 
                 <div class="bg-nexoCard border border-white/10 rounded-[2.5rem] p-8 md:p-12 flex flex-col relative group hover:border-nexoBlue/40 transition-all duration-500">
@@ -140,13 +141,13 @@
                             <span class="text-5xl md:text-7xl text-white font-black">60.000</span><span class="text-2xl text-nexoBlue ml-3">€</span>
                         </div>
                     </div>
-                    <ul class="space-y-4 text-xs md:text-sm text-gray-300 mb-8 flex-grow">
+                    <ul class="space-y-4 text-xs md:text-sm text-gray-300 mb-8 flex-grow font-montserrat">
                         <li>❖ Autonomia de Nivell 4 amb Fallback</li>
                         <li>❖ Sensors 360° LiDAR i càmeres HD</li>
                         <li>❖ Navegació per GPS Diferencial (1cm)</li>
                         <li>❖ Chassís d'alumini Gris Metal·litzat</li>
                     </ul>
-                    <button onclick="toggleInfo('info-core')" class="text-nexoBlue text-[10px] uppercase font-bold tracking-widest mb-6 font-title">+ Info Detallada</button>
+                    <button onclick="toggleInfo('info-core')" class="text-nexoBlue text-[10px] uppercase font-bold tracking-widest mb-6 font-title text-center hover:underline">+ Info Detallada</button>
                     <div id="info-core" class="info-content">
                         <div class="space-y-4 text-[11px] text-gray-400 italic">
                             <p><strong class="text-white font-title text-[9px] uppercase">Nivell 4 & Fallback:</strong> Navegació autònoma segura amb protocol d'aturada crítica.</p>
@@ -156,19 +157,20 @@
                     </div>
                     <div class="border-t border-white/5 pt-6 space-y-3 mb-10"><div class="flex justify-between text-[9px] uppercase font-bold"><span class="text-gray-500">Manteniment</span><span class="text-white italic">Inclòs 1er any</span></div><div class="flex justify-between text-[9px] uppercase font-bold"><span class="text-gray-500">Entrega</span><span class="text-white italic">Configuració GPS</span></div></div>
                     <button onclick="showModal('Sentinel Core')" class="w-full py-5 border border-nexoBlue/50 text-white font-title text-[10px] tracking-widest uppercase rounded-xl hover:bg-nexoBlue transition-all">RESERVAR</button>
+                    <p class="text-center text-[8px] text-gray-600 uppercase tracking-widest mt-4 font-title italic">Fabricació: 3 mesos</p>
                 </div>
 
-                <div class="bg-[#11131c] border-2 border-nexoGold/40 rounded-[2.5rem] p-8 md:p-12 flex flex-col relative lg:scale-105 gold-glow duration-500">
-                    <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-nexoGold text-black px-8 py-1.5 rounded-full text-[9px] font-bold uppercase font-title">Màxima Autonomia</div>
+                <div class="bg-[#11131c] border-2 border-nexoGold/40 rounded-[2.5rem] p-8 md:p-12 flex flex-col relative lg:scale-105 gold-glow transition-all duration-500">
+                    <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-nexoGold text-black px-8 py-1.5 rounded-full text-[9px] font-bold uppercase font-title shadow-lg">Màxima Autonomia</div>
                     <div class="absolute top-0 left-0 w-full h-1.5 bg-nexoGold rounded-t-full"></div>
                     <div class="mb-10 text-center md:text-left"><h3 class="text-nexoGold text-2xl uppercase mb-2 font-title">Solar Full Pack</h3><div class="flex items-baseline font-title mb-8 justify-center md:justify-start"><span class="text-5xl md:text-7xl text-white font-black">80.000</span><span class="text-2xl text-nexoGold ml-3">€</span></div></div>
-                    <ul class="space-y-4 text-xs md:text-sm text-white mb-8 flex-grow">
+                    <ul class="space-y-4 text-xs md:text-sm text-white mb-8 flex-grow font-montserrat">
                         <li class="opacity-60">❖ Autonomia de Nivell 4 completa</li>
                         <li>✦ Sistema de Càrrega Dual (Plaques)</li>
                         <li>✦ Paraigües automàtic intel·ligent</li>
                         <li>✦ Bateria de liti de capacitats estesa</li>
                     </ul>
-                    <button onclick="toggleInfo('info-solar')" class="text-nexoGold text-[10px] uppercase font-bold tracking-widest mb-6 font-title">+ Info Detallada</button>
+                    <button onclick="toggleInfo('info-solar')" class="text-nexoGold text-[10px] uppercase font-bold tracking-widest mb-6 font-title text-center hover:underline">+ Info Detallada</button>
                     <div id="info-solar" class="info-content">
                         <div class="space-y-4 text-[11px] text-gray-400 italic">
                             <p class="text-white font-bold uppercase text-[8px] font-title border-b border-white/5 pb-1">Inclou base Sentinel Core:</p>
@@ -176,11 +178,12 @@
                             <p class="text-nexoGold font-bold uppercase text-[8px] font-title mt-4 border-b border-white/5 pb-1">Extres Solar Full Pack:</p>
                             <p><strong class="text-white uppercase font-title text-[9px]">Càrrega Dual:</strong> Plaques solars integrades per a recàrrega passiva.</p>
                             <p><strong class="text-white uppercase font-title text-[9px]">Paraigües:</strong> Sensor de pluja i vent per a protecció automàtica.</p>
-                            <p><strong class="text-white uppercase font-title text-[9px]">Energia:</strong> Un 40% més d'autonomia per a trajectes llargs.</p>
+                            <p><strong class="text-white uppercase font-title text-[9px]">Energia:</strong> Un 40% més d'autonomia.</p>
                         </div>
                     </div>
                     <div class="border-t border-white/10 pt-6 space-y-3 mb-10 font-bold"><div class="flex justify-between text-[9px] uppercase"><span class="text-gray-400">Càrrega</span><span class="text-nexoGold italic">Plaques Solares</span></div><div class="flex justify-between text-[9px] uppercase"><span class="text-gray-400">Confort</span><span class="text-nexoGold italic">Paraguas Intel.</span></div></div>
                     <button onclick="showModal('Solar Full Pack')" class="w-full bg-nexoGold text-black py-5 rounded-xl font-title text-[10px] font-bold tracking-widest uppercase hover:brightness-110 transition-all shadow-xl">RESERVAR</button>
+                    <p class="text-center text-[8px] text-nexoGold uppercase tracking-widest mt-4 font-title italic">Fabricació: 5 mesos</p>
                 </div>
             </div>
         </div>
@@ -188,39 +191,25 @@
 
     <section id="essencia" class="py-24 md:py-32 px-6 md:px-10 lg:px-24 bg-nexoDark border-t border-white/5">
         <div class="max-w-6xl mx-auto">
-            <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 font-body text-left">
-                <div>
-                    <h2 class="text-nexoBlue text-2xl md:text-3xl uppercase tracking-widest mb-6 font-title">Missió</h2>
-                    <p class="text-sm md:text-base leading-relaxed text-gray-300 italic font-light">
-                        Transformar la mobilitat assistida mitjançant tecnologia autònoma d'avantguarda, retornant la llibertat absoluta i la confiança a les persones amb mobilitat reduïda en els seus desplaçaments diaris.
-                    </p>
-                </div>
-                <div>
-                    <h2 class="text-nexoGreen text-2xl md:text-3xl uppercase tracking-widest mb-6 font-title">Visió</h2>
-                    <p class="text-sm md:text-base leading-relaxed text-gray-300 italic font-light">
-                        Consolidar-nos com el referent global en solucions d'assistència intel·ligent, liderant la creació de ciutats més accessibles on la tecnologia i la inclusió caminin de la mà.
-                    </p>
-                </div>
-                <div>
-                    <h2 class="text-nexoGold text-2xl md:text-3xl uppercase tracking-widest mb-6 font-title">Valor</h2>
-                    <p class="text-sm md:text-base leading-relaxed text-gray-300 italic font-light">
-                        <strong>Seguretat Intel·ligent (El "Centinela"):</strong> La nostra prioritat absoluta. No sols movem persones; les protegim mitjançant una vigilància proactiva i constant del seu entorn.
-                    </p>
-                </div>
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 text-left font-montserrat">
+                <div><h2 class="text-nexoBlue text-2xl md:text-3xl uppercase tracking-widest mb-6 font-title">Missió</h2><p class="text-sm md:text-base leading-relaxed text-gray-300 italic font-light">Transformar la mobilitat assistida mitjançant tecnologia autònoma d'avantguarda, retornant la llibertat absoluta.</p></div>
+                <div><h2 class="text-nexoGreen text-2xl md:text-3xl uppercase tracking-widest mb-6 font-title">Visió</h2><p class="text-sm md:text-base leading-relaxed text-gray-300 italic font-light">Consolidar-nos com el referent global en solucions d'assistència intel·ligent i ciutats més accessibles.</p></div>
+                <div><h2 class="text-nexoGold text-2xl md:text-3xl uppercase tracking-widest mb-6 font-title">Valor</h2><p class="text-sm md:text-base leading-relaxed text-gray-300 italic font-light"><strong>Seguretat Intel·ligent:</strong> La nostra prioritat absoluta. Protegim mitjançant una vigilància proactiva constant.</p></div>
             </div>
         </div>
     </section>
 
     <section id="seguretat" class="py-24 md:py-32 px-6 md:px-10 lg:px-24 bg-nexoDark border-t border-white/5">
         <div class="max-w-4xl mx-auto">
-            <h2 class="text-2xl md:text-4xl text-white mb-4 uppercase tracking-widest font-title text-center">6.3. PLA D'ACCIÓ DAVANT D'UNA <span class="text-nexoBlue">ATURADA PER PERILL EXTREM</span></h2>
-            <p class="text-center text-gray-500 mb-20 italic">Un cop rebuda l'alerta, l'equip tècnic activa un protocol dividit en cinc fases coordinades:</p>
-            <div class="timeline-container">
-                <div class="timeline-step"><div class="timeline-dot"></div><h3 class="text-white text-lg mb-2 font-title uppercase">Fase 1: Recepció i Tria de l'Alerta <span class="text-nexoBlue">(Mihaela)</span></h3><p class="text-[10px] text-nexoBlue font-bold uppercase mb-4 tracking-widest font-montserrat">Cap d'Operacions i Seguretat</p><ul class="space-y-4 text-sm text-gray-400 font-light"><li><strong>Verificació:</strong> Comprova l'estat de "risc mínim" i bloqueig de motors.</li><li><strong>Monitoratge:</strong> Flux de dades 360° per identificar el perill.</li></ul></div>
-                <div class="timeline-step"><div class="timeline-dot"></div><h3 class="text-white text-lg mb-2 font-title uppercase">Fase 2: Suport Emocional <span class="text-nexoBlue">(Inaya)</span></h3><p class="text-[10px] text-nexoBlue font-bold uppercase mb-4 tracking-widest font-montserrat">Directora de Comunicació</p><ul class="space-y-4 text-sm text-gray-400 font-light"><li><strong>Canal de veu:</strong> Línia bidireccional per tranquil·litzar l'usuari.</li><li><strong>Informació:</strong> Explica el motiu de l'aturada detectada.</li></ul></div>
-                <div class="timeline-step"><div class="timeline-dot"></div><h3 class="text-white text-lg mb-2 font-title uppercase">Fase 3: Diagnòstic Tècnic <span class="text-nexoBlue">(Raúl i Magí)</span></h3><p class="text-[10px] text-nexoBlue font-bold uppercase mb-4 tracking-widest font-montserrat">Sistemes i IA</p><ul class="space-y-4 text-sm text-gray-400 font-light"><li><strong>Integritat:</strong> Verifica xarxa de sensors i GPS diferencial.</li><li><strong>IA:</strong> Analitza l'algoritme per recalcular rutes alternatives.</li></ul></div>
-                <div class="timeline-step"><div class="timeline-dot step-green"></div><h3 class="text-white text-lg mb-2 font-title uppercase">Fase 4: Intervenció Física <span class="text-nexoGreen">(Magí)</span></h3><p class="text-[10px] text-nexoGreen font-bold uppercase mb-4 tracking-widest font-montserrat">Director de Manteniment</p><ul class="space-y-4 text-sm text-gray-400 font-light"><li><strong>Desplaçament:</strong> Intervenció al lloc si hi ha problemes de hardware.</li><li><strong>Recuperació:</strong> Verificació de càrrega i rebuig manual.</li></ul></div>
-                <div class="timeline-step"><div class="timeline-dot step-green"></div><h3 class="text-white text-lg mb-2 font-title uppercase">Fase 5: Tancament <span class="text-nexoGreen">(Equip)</span></h3><p class="text-[10px] text-nexoGreen font-bold uppercase mb-4 tracking-widest font-montserrat">Post-Incident</p><ul class="space-y-4 text-sm text-gray-400 font-light"><li><strong>Informe:</strong> Registre de l'incident per millorar l'IA.</li><li><strong>ODS 11:</strong> Notificació d'obstacles a l'Ajuntament.</li></ul></div>
+            <h2 class="text-2xl md:text-4xl text-white mb-4 uppercase tracking-widest font-title text-center">PLA D'ACCIÓ DAVANT D'UNA <span class="text-nexoBlue">ATURADA PER PERILL EXTREM</span></h2>
+            <p class="text-center text-gray-500 mb-20 italic font-montserrat">Un cop rebuda l'alerta, l'equip tècnic activa un protocol dividit en cinc fases coordinades:</p>
+            
+            <div class="timeline-container font-montserrat">
+                <div class="timeline-step"><div class="timeline-dot"></div><h3 class="text-white text-lg mb-2 font-title uppercase">Fase 1: Recepció i Tria de l'Alerta <span class="text-nexoBlue">(Mihaela)</span></h3><p class="text-[10px] text-nexoBlue font-bold uppercase mb-4 tracking-widest font-montserrat font-bold">Cap d'Operacions i Seguretat</p><ul class="space-y-4 text-sm text-gray-400 font-light"><li><strong>Verificació:</strong> Comprova l'estat de "risc mínim" i bloqueig de motors.</li><li><strong>Monitoratge:</strong> Flux de dades 360° per identificar el perill.</li></ul></div>
+                <div class="timeline-step"><div class="timeline-dot"></div><h3 class="text-white text-lg mb-2 font-title uppercase">Fase 2: Suport Emocional <span class="text-nexoBlue">(Inaya)</span></h3><p class="text-[10px] text-nexoBlue font-bold uppercase mb-4 tracking-widest font-bold">Directora de Comunicació</p><ul class="space-y-4 text-sm text-gray-400 font-light"><li><strong>Canal de veu:</strong> Línia bidireccional per tranquil·litzar l'usuari.</li><li><strong>Informació:</strong> Explica el motiu de l'aturada detectada.</li></ul></div>
+                <div class="timeline-step"><div class="timeline-dot"></div><h3 class="text-white text-lg mb-2 font-title uppercase">Fase 3: Diagnòstic Tècnic <span class="text-nexoBlue">(Raúl i Magí)</span></h3><p class="text-[10px] text-nexoBlue font-bold uppercase mb-4 tracking-widest font-bold">Sistemes i IA</p><ul class="space-y-4 text-sm text-gray-400 font-light"><li><strong>Integritat:</strong> Verifica xarxa de sensors i GPS diferencial.</li><li><strong>IA:</strong> Analitza l'algoritme per recalcular rutes alternatives.</li></ul></div>
+                <div class="timeline-step"><div class="timeline-dot step-green"></div><h3 class="text-white text-lg mb-2 font-title uppercase">Fase 4: Intervenció Física <span class="text-nexoGreen">(Magí)</span></h3><p class="text-[10px] text-nexoGreen font-bold uppercase mb-4 tracking-widest font-bold">Director de Manteniment</p><ul class="space-y-4 text-sm text-gray-400 font-light"><li><strong>Desplaçament:</strong> Intervenció al lloc si hi ha problemes de hardware.</li><li><strong>Recuperació:</strong> Verificació de càrrega i rebuig manual.</li></ul></div>
+                <div class="timeline-step"><div class="timeline-dot step-green"></div><h3 class="text-white text-lg mb-2 font-title uppercase">Fase 5: Tancament <span class="text-nexoGreen">(Equip)</span></h3><p class="text-[10px] text-nexoGreen font-bold uppercase mb-4 tracking-widest font-bold">Post-Incident</p><ul class="space-y-4 text-sm text-gray-400 font-light"><li><strong>Informe:</strong> Registre de l'incident per millorar l'IA.</li><li><strong>ODS 11:</strong> Notificació d'obstacles a l'Ajuntament.</li></ul></div>
             </div>
         </div>
     </section>
@@ -237,11 +226,11 @@
     </section>
 
     <div id="reservation-modal" class="fixed inset-0 z-[100] hidden flex items-center justify-center p-6 bg-black/90 backdrop-blur-xl opacity-0 transition-opacity duration-300 font-montserrat">
-        <div class="bg-nexoCard border border-white/10 p-10 rounded-[3rem] max-w-xl w-full text-center shadow-2xl relative">
+        <div class="bg-nexoCard border border-white/10 p-10 rounded-[3rem] max-w-xl w-full text-center shadow-2xl relative font-montserrat">
             <div class="text-nexoGreen text-7xl mb-8 font-title">✓</div>
-            <h2 class="text-white text-2xl mb-6 uppercase font-title">Reserva confirmada</h2>
+            <h2 class="text-white text-2xl mb-6 uppercase font-title font-bold">Reserva confirmada</h2>
             <p id="modal-text" class="text-lg text-gray-400 italic">Gràcies per reservar <span id="chair-model" class="text-white font-bold underline"></span>. Ens posarem en contacte amb tu. Gràcies.</p>
-            <button onclick="closeModal()" class="w-full bg-nexoBlue text-white py-5 rounded-2xl text-[10px] tracking-widest uppercase font-title mt-10">Tancar</button>
+            <button onclick="closeModal()" class="w-full bg-nexoBlue text-white py-5 rounded-2xl text-[10px] tracking-widest uppercase font-title mt-10 hover:bg-blue-800 transition">Tancar</button>
         </div>
     </div>
 
@@ -249,14 +238,36 @@
         function toggleInfo(id) { document.getElementById(id).classList.toggle('open'); }
         const modal = document.getElementById('reservation-modal');
         const chairModelSpan = document.getElementById('chair-model');
-        function showModal(modelName) { chairModelSpan.innerText = modelName; modal.classList.remove('hidden'); setTimeout(() => { modal.classList.add('flex'); modal.classList.replace('opacity-0', 'opacity-100'); }, 10); document.body.style.overflow = 'hidden'; }
-        function closeModal() { modal.classList.replace('opacity-100', 'opacity-0'); setTimeout(() => { modal.classList.add('hidden'); modal.classList.remove('flex'); }, 300); document.body.style.overflow = ''; }
+
+        function showModal(modelName) { 
+            chairModelSpan.innerText = modelName; 
+            modal.classList.remove('hidden'); 
+            setTimeout(() => { modal.classList.add('flex'); modal.classList.replace('opacity-0', 'opacity-100'); }, 10); 
+            document.body.style.overflow = 'hidden'; 
+        }
+
+        function closeModal() { 
+            modal.classList.replace('opacity-100', 'opacity-0'); 
+            setTimeout(() => { modal.classList.add('hidden'); modal.classList.remove('flex'); }, 300); 
+            document.body.style.overflow = ''; 
+        }
         
         const btnOpen = document.getElementById('mobile-menu-btn');
         const btnClose = document.getElementById('close-menu-btn');
         const menu = document.getElementById('mobile-menu');
-        btnOpen.onclick = () => { menu.classList.remove('hidden'); setTimeout(() => menu.classList.replace('opacity-0', 'opacity-100'), 10); document.body.style.overflow = 'hidden'; }
-        btnClose.onclick = () => { menu.classList.replace('opacity-100', 'opacity-0'); setTimeout(() => menu.classList.add('hidden'), 300); document.body.style.overflow = ''; }
+
+        btnOpen.onclick = () => { 
+            menu.classList.remove('hidden'); 
+            setTimeout(() => menu.classList.replace('opacity-0', 'opacity-100'), 10); 
+            document.body.style.overflow = 'hidden'; 
+        }
+
+        btnClose.onclick = () => { 
+            menu.classList.replace('opacity-100', 'opacity-0'); 
+            setTimeout(() => menu.classList.add('hidden'), 300); 
+            document.body.style.overflow = ''; 
+        }
+
         window.onclick = (e) => { if (e.target == modal) closeModal(); }
     </script>
 </body>
