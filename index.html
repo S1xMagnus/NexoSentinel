@@ -95,6 +95,7 @@
         <a class="mobile-link text-2xl text-white uppercase tracking-widest font-title" href="#ods">Agenda 2030</a>
     </div>
 
+    <!-- SECCIÓN HERO -->
     <section class="min-h-screen flex items-center justify-center relative pt-24 px-6 overflow-hidden">
         <div class="absolute w-[800px] h-[800px] bg-nexoBlue/5 rounded-full blur-[150px] -z-10"></div>
         <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-24 items-center relative z-10">
@@ -109,12 +110,14 @@
             </div>
             <div class="relative flex justify-center items-center">
                 <div class="absolute inset-0 border border-white/5 rounded-full animate-[spin_30s_linear_infinite]"></div>
-                <div class="relative w-80 h-[500px] bg-white/[0.01] rounded-[3.5rem] border border-white/10 flex items-center justify-center overflow-hidden backdrop-blur-md">
+                <!-- CONTENEDOR DE IMAGEN HERO -->
+                <div class="relative w-full max-w-[450px] aspect-[3/4] bg-white/[0.01] rounded-[3.5rem] border border-white/10 flex items-center justify-center overflow-hidden backdrop-blur-md p-6">
                     <div class="scanner-line"></div>
-                    <span class="text-[10rem] opacity-5 filter grayscale">♿</span>
-                    <div class="absolute bottom-10 font-title text-[8px] text-nexoBlue tracking-[0.5em] uppercase animate-pulse">Scanning Terrain...</div>
+                    <!-- IMAGEN SUPERIOR: RUTA CORREGIDA -->
+                    <img src="./img/Modelo_SolarFullPack.png" alt="Modelo Solar Full Pack" class="relative z-0 w-full h-full object-contain drop-shadow-[0_0_30px_rgba(0,82,255,0.2)]">
+                    <div class="absolute bottom-6 font-title text-[8px] text-nexoBlue tracking-[0.5em] uppercase animate-pulse text-center w-full">Scanning Terrain...</div>
                 </div>
-                <div class="absolute -right-4 top-20 bg-black/80 border border-white/10 px-5 py-2 rounded-full backdrop-blur-xl flex items-center gap-3">
+                <div class="absolute -right-4 top-1/4 bg-black/80 border border-white/10 px-5 py-2 rounded-full backdrop-blur-xl flex items-center gap-3">
                     <span class="w-2 h-2 bg-nexoGreen rounded-full animate-pulse shadow-[0_0_10px_#28a745]"></span>
                     <p class="text-[9px] font-title text-white tracking-widest uppercase">Autonomia Nivell 4</p>
                 </div>
@@ -131,6 +134,7 @@
 
             <div class="grid lg:grid-cols-2 gap-12 items-start">
                 
+                <!-- PACK 1: SENTINEL CORE -->
                 <div class="premium-card p-12 md:p-16 rounded-[4rem] relative group">
                     <div class="absolute top-0 left-0 w-full h-1 bg-nexoBlue opacity-30"></div>
                     <div class="mb-14">
@@ -140,6 +144,12 @@
                             <span class="text-3xl text-nexoBlue font-bold">€</span>
                         </div>
                     </div>
+
+                    <!-- IMAGEN SENTINEL CORE: RUTA CORREGIDA -->
+                    <div class="flex justify-center mb-10 h-64">
+                        <img src="./img/Modelo_SentinelCore.png" alt="Model Sentinel Core" class="h-full w-full object-contain transition-transform group-hover:scale-110 duration-500 drop-shadow-xl">
+                    </div>
+
                     <ul class="space-y-6 mb-12 font-montserrat border-y border-white/5 py-10">
                         <li class="flex items-center gap-6"><div class="w-1.5 h-1.5 bg-nexoBlue rounded-full shadow-[0_0_10px_#0052ff]"></div><span class="text-gray-300 text-sm">Autonomia de Nivell 4 amb Fallback</span></li>
                         <li class="flex items-center gap-6"><div class="w-1.5 h-1.5 bg-nexoBlue rounded-full shadow-[0_0_10px_#0052ff]"></div><span class="text-gray-300 text-sm">Sensors 360° LiDAR i càmeres HD</span></li>
@@ -164,7 +174,8 @@
                     <p class="text-center mt-8 font-title text-[9px] text-gray-700 tracking-[0.8em]">ETD: 3 MESOS</p>
                 </div>
 
-                <div class="premium-card p-12 md:p-16 rounded-[4rem] relative border-nexoGold/20 shadow-[0_0_60px_rgba(212,175,55,0.05)]">
+                <!-- PACK 2: SOLAR FULL PACK -->
+                <div class="premium-card p-12 md:p-16 rounded-[4rem] relative border-nexoGold/20 shadow-[0_0_60px_rgba(212,175,55,0.05)] group">
                     <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-nexoGold text-black font-title text-[9px] px-6 py-1.5 rounded-full font-black uppercase tracking-widest shadow-xl">Màxima Autonomia</div>
                     <div class="mb-14">
                         <h3 class="text-nexoGold text-3xl font-title uppercase mb-3">Solar Full Pack</h3>
@@ -173,6 +184,12 @@
                             <span class="text-3xl text-nexoGold font-bold animate-pulse">€</span>
                         </div>
                     </div>
+
+                    <!-- IMAGEN SOLAR FULL PACK: RUTA CORREGIDA -->
+                    <div class="flex justify-center mb-10 h-64">
+                        <img src="./img/Modelo_SolarFullPack.png" alt="Model Solar Full Pack" class="h-full w-full object-contain transition-transform group-hover:scale-110 duration-500 drop-shadow-xl">
+                    </div>
+
                     <ul class="space-y-6 mb-12 font-bold font-montserrat border-y border-white/5 py-10">
                         <li class="flex items-center gap-6 text-gray-600 italic font-normal"><div class="w-1.5 h-1.5 bg-gray-600 rotate-45"></div><span>Tecnologia Sentinel Core Inclosa</span></li>
                         <li class="flex items-center gap-6 text-white"><div class="w-1.5 h-1.5 bg-nexoGold rotate-45 shadow-[0_0_10px_#D4AF37]"></div><span>Càrrega Dual (Plaques Solars)</span></li>
@@ -195,53 +212,6 @@
                     </div>
                     <button onclick="showModal('Solar Full Pack')" class="w-full py-7 bg-nexoGold text-black font-title text-[11px] uppercase font-black tracking-[0.5em] rounded-full hover:scale-[1.02] transition-all mt-10 shadow-2xl">RESERVAR</button>
                     <p class="text-center mt-8 font-title text-[9px] text-nexoGold/30 tracking-[0.8em]">ETD: 5 MESOS</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="essencia" class="py-32 px-6 bg-black border-y border-white/5">
-        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-16 font-montserrat">
-            <div><h2 class="text-nexoBlue font-title text-xl mb-8 uppercase tracking-widest border-l-2 border-nexoBlue pl-6">Missió</h2><p class="text-sm md:text-base leading-relaxed text-gray-400 italic font-light">Transformar la mobilitat assistida mitjançant tecnologia autònoma d'avantguarda, retornant la llibertat absoluta.</p></div>
-            <div><h2 class="text-nexoGreen font-title text-xl mb-8 uppercase tracking-widest border-l-2 border-nexoGreen pl-6">Visió</h2><p class="text-sm md:text-base leading-relaxed text-gray-400 italic font-light">Consolidar-nos com el referent global en solucions d'assistència intel·ligent i ciutats més accessibles.</p></div>
-            <div><h2 class="text-nexoGold font-title text-xl mb-8 uppercase tracking-widest border-l-2 border-nexoGold pl-6">Valor</h2><p class="text-sm md:text-base leading-relaxed text-gray-400 italic font-light"><strong>Seguretat Intel·ligent:</strong> La nostra prioritat absoluta. Protegim mitjançant una vigilància proactiva constant.</p></div>
-        </div>
-    </section>
-
-    <section id="seguretat" class="py-32 px-6 bg-[#020203]">
-        <div class="max-w-5xl mx-auto">
-            <h2 class="text-3xl md:text-5xl text-white font-title uppercase mb-24 tracking-tighter text-center">PLA D'ACCIÓ DAVANT <span class="text-nexoBlue">ATURADA</span></h2>
-            <div class="space-y-24 border-l border-white/5 pl-12 relative ml-4 md:ml-0 font-montserrat">
-                <div class="relative"><div class="timeline-dot bg-nexoBlue shadow-[0_0_15px_#0052ff]"></div><h3 class="text-white text-xl font-bold uppercase mb-3 font-title">01 / Recepció i Tria <span class="text-nexoBlue text-xs">[MIHAELA]</span></h3><p class="text-gray-500 text-sm leading-relaxed max-w-2xl font-light italic">Verificació instantània del protocol de risc mínim i monitoratge de sensors 360°.</p></div>
-                <div class="relative"><div class="timeline-dot bg-nexoBlue shadow-[0_0_15px_#0052ff]"></div><h3 class="text-white text-xl font-bold uppercase mb-3 font-title">02 / Suport Emocional <span class="text-nexoBlue text-xs">[INAYA]</span></h3><p class="text-gray-500 text-sm leading-relaxed max-w-2xl font-light italic">Canal de veu bidireccional immediat per informar i tranquil·litzar l'usuari.</p></div>
-                <div class="relative"><div class="timeline-dot bg-nexoBlue shadow-[0_0_15px_#0052ff]"></div><h3 class="text-white text-xl font-bold uppercase mb-3 font-title">03 / Diagnòstic IA <span class="text-nexoBlue text-xs">[RAÚL I MAGÍ]</span></h3><p class="text-gray-500 text-sm leading-relaxed max-w-2xl font-light italic">Verificació d'integritat del GPS Diferencial i recàlcul automàtic de rutes IA.</p></div>
-                <div class="relative"><div class="timeline-dot bg-nexoGreen shadow-[0_0_15px_#28a745]"></div><h3 class="text-white text-xl font-bold uppercase mb-3 font-title font-bold">04 / Intervenció Física <span class="text-nexoGreen text-xs">[MAGÍ]</span></h3><p class="text-gray-500 text-sm leading-relaxed max-w-2xl font-light italic">Desplaçament al lloc si el hardware requereix recuperació manual o càrrega.</p></div>
-                <div class="relative"><div class="timeline-dot bg-nexoGreen shadow-[0_0_15px_#28a745]"></div><h3 class="text-white text-xl font-bold uppercase mb-3 font-title font-bold">05 / Tancament de Protocol</h3><p class="text-gray-500 text-sm leading-relaxed max-w-2xl font-light italic">Informe tècnic per millorar la IA i notificació a l'Ajuntament segons l'ODS 11.</p></div>
-            </div>
-        </div>
-    </section>
-
-    <section id="ods" class="py-32 px-6 bg-black border-t border-white/5">
-        <div class="max-w-7xl mx-auto">
-            <h2 class="text-4xl md:text-6xl text-white font-title uppercase mb-24 tracking-tighter text-center">AGENDA <span class="text-nexoGreen font-black">2030</span></h2>
-            <div class="grid grid-cols-1 lg:grid-cols-3 gap-10">
-                <div class="bg-white/5 p-12 rounded-[3rem] border border-white/5 relative overflow-hidden group">
-                    <p class="text-nexoGreen text-8xl font-black absolute -right-4 -bottom-6 opacity-5 group-hover:opacity-10 transition-all">09</p>
-                    <div class="text-nexoGreen text-4xl mb-10"><svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="1.2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.613.307a2 2 0 01-1.786 0l-.613-.307a6 6 0 00-3.86-.517l-2.387.477a2 2 0 00-1.022.547V21a1 1 0 001 1h16a1 1 0 001-1v-5.572zM12 11V4.5M12 4.5L14.5 7M12 4.5L9.5 7"></path></svg></div>
-                    <h3 class="text-white text-xl font-title uppercase mb-4">Innovació</h3>
-                    <p class="text-gray-500 font-bold text-[10px] tracking-[0.3em] uppercase">Integració SMX de precisió</p>
-                </div>
-                <div class="bg-white/5 p-12 rounded-[3rem] border border-white/5 relative overflow-hidden group">
-                    <p class="text-nexoGreen text-8xl font-black absolute -right-4 -bottom-6 opacity-5 group-hover:opacity-10 transition-all">10</p>
-                    <div class="text-nexoGreen text-4xl mb-10"><svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="1.2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path></svg></div>
-                    <h3 class="text-white text-xl font-title uppercase mb-4">Inclusió</h3>
-                    <p class="text-gray-500 font-bold text-[10px] tracking-[0.3em] uppercase">Reducció Desigualtats</p>
-                </div>
-                <div class="bg-white/5 p-12 rounded-[3rem] border border-white/5 relative overflow-hidden group">
-                    <p class="text-nexoGreen text-8xl font-black absolute -right-4 -bottom-6 opacity-5 group-hover:opacity-10 transition-all">11</p>
-                    <div class="text-nexoGreen text-4xl mb-10"><svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="1.2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg></div>
-                    <h3 class="text-white text-xl font-title uppercase mb-4">Smart Cities</h3>
-                    <p class="text-gray-500 font-bold text-[10px] tracking-[0.3em] uppercase">Ciutats Sostenibles</p>
                 </div>
             </div>
         </div>
@@ -288,4 +258,4 @@
         window.onclick = (e) => { if (e.target == modal) closeModal(); }
     </script>
 </body>
-</html> 
+</html>
